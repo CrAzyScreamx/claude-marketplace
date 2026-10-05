@@ -1,0 +1,6 @@
+{
+  "name": "usage-alert",
+  "version": "0.1.0",
+  "description": "Shows 5-hour and weekly usage in the status line and alerts when either reaches 90%",
+  "types": "./types/index.d.ts"
+}

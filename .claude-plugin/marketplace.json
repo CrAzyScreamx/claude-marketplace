@@ -48,6 +48,16 @@
       "name": "packaging-software",
       "source": "./packaging-software",
       "description": "Invoke BEFORE writing any PyInstaller .spec file or packaging a Python app into a Windows .exe. Encodes onedir build, .spec-driven config, icon/logo, exe naming + embedded version metadata, and frozen-app asset bundling."
+    },
+    {
+      "name": "rtl-fix",
+      "source": "./rtl-fix",
+      "description": "Mod: displays Hebrew/Arabic (RTL) text correctly in your messages and Claude's replies, wrapping lines before reordering them."
+    },
+    {
+      "name": "usage-alert",
+      "source": "./usage-alert",
+      "description": "Mod: shows 5-hour and weekly usage in the status line and alerts when either reaches 90%."
     }
   ]
 }
