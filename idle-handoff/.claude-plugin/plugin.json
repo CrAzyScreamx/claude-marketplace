@@ -1,0 +1,53 @@
+{
+  "name": "idle-handoff",
+  "version": "0.2.1",
+  "description": "Warns when the session sits idle before the prompt cache expires, saves a handoff summary (on idle, /exit or /clear), and offers it to the next session in the same project",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "idleWarnMinutes": {
+      "type": "number",
+      "title": "Warn after idle (minutes)",
+      "description": "How long the session sits idle after Claude's last reply before you're warned that the prompt cache is about to expire.",
+      "default": 45
+    },
+    "graceMinutes": {
+      "type": "number",
+      "title": "Grace period (minutes)",
+      "description": "How long after the warning to wait for a reply before the handoff summary is written. Keep warn + grace under 60 so the summary is still served from the prompt cache.",
+      "default": 5
+    },
+    "onIdle": {
+      "type": "string",
+      "title": "When the grace period ends",
+      "description": "summarize: write the handoff summary. warn-only: only warn, never write one.",
+      "default": "summarize",
+      "options": ["summarize", "warn-only"]
+    },
+    "onExit": {
+      "type": "string",
+      "title": "On /exit and /clear",
+      "description": "ask: offer to save a summary first (only when there's unsaved work). always: save one without asking. never: do nothing.",
+      "default": "ask",
+      "options": ["ask", "always", "never"]
+    },
+    "onStart": {
+      "type": "string",
+      "title": "When a saved summary exists at start",
+      "description": "ask: show a band to load or discard it. load: load it into context automatically. off: say nothing (/handoff still loads it).",
+      "default": "ask",
+      "options": ["ask", "load", "off"]
+    },
+    "summaryWords": {
+      "type": "number",
+      "title": "Summary length (words)",
+      "description": "Upper bound on the handoff summary's length.",
+      "default": 300
+    },
+    "desktopNotify": {
+      "type": "boolean",
+      "title": "Desktop notification",
+      "description": "Also send the idle warning as a desktop notification (notify-send on Linux).",
+      "default": true
+    }
+  }
+}

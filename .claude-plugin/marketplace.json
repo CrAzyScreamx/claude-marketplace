@@ -58,6 +58,11 @@
       "name": "usage-alert",
       "source": "./usage-alert",
       "description": "Mod: shows 5-hour and weekly usage in the status line and alerts when either reaches 90%."
+    },
+    {
+      "name": "idle-handoff",
+      "source": "./idle-handoff",
+      "description": "Mod: warns before an idle session's prompt cache expires, saves a handoff summary (on idle, /exit or /clear), and offers it to the next session in the project."
     }
   ]
 }
