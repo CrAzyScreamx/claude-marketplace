@@ -9,7 +9,7 @@ if (!isWorktreeAdd(tool_input?.command ?? '')) allow();
 deny([
   'Do not create worktrees with `git worktree add` — it skips the worktree',
   'workflow entirely. Use the `EnterWorktree` tool instead; it sets up the',
-  'worktree and hands the feature to the `worktree-manager` agent.',
+  'worktree and steers you into the `worktree-manager` skill.',
   '',
   'EnterWorktree already creates the worktree under `.claude/worktrees/` in the',
   'current repository — that is the only supported location. If the user asked',

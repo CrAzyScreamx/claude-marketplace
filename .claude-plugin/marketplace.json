@@ -7,7 +7,7 @@
     {
       "name": "worktree-guidelines",
       "source": "./plugins/worktree-guidelines",
-      "description": "Guidelines-first worktree workflow: entry steers you to load a per-language guidelines skill (or ask to build one via best-practices) and code via the coder agent, which uses Context7 for up-to-date library docs."
+      "description": "Guidelines-first worktree workflow: entry steers you into the `worktree-manager` skill, which interviews the user, confirms a per-language guidelines skill exists (or builds one via `guideline-builder`), then runs a Workflow that codes, type-checks, and reviews the feature in capped rounds."
     },
     {
       "name": "image-generator",

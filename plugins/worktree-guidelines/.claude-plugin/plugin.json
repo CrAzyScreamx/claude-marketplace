@@ -1,5 +1,5 @@
 {
     "name": "worktree-guidelines",
-    "description": "Guidelines-first worktree workflow. On entering a git worktree you run the `worktree-manager` skill and act as the manager: interview the user, split tasks, run parallel `worktree-coder`s, then `worktree-type-checker` and `worktree-reviewer` looping until the review passes. Each coder loads a per-language `<lang>-guidelines` skill (built via `guideline-builder` if none exists yet) and uses Context7 for up-to-date library docs. Use for any isolated feature work in a worktree.",
-    "version": "2.7.0"
+    "description": "Guidelines-first worktree workflow. On entering a git worktree you run the `worktree-manager` skill and act as the manager: interview the user, confirm a `<lang>-guidelines` skill exists per stack (built via `guideline-builder` if not), split tasks, then launch a Workflow that runs the coder / type-check / review loop with real parallel barriers and capped rounds. Each coder loads its guideline and uses Context7 for up-to-date library docs. Use for any isolated feature work in a worktree.",
+    "version": "3.0.0"
 }
