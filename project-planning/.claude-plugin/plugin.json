@@ -1,5 +1,0 @@
-{
-    "name": "project-planning",
-    "description": "Turns a project's plan.md into a structured tasks.md (Milestones, sub-tasks, descriptions, and a status tracking table) and keeps progress up to date. Auto-triggers at the start of a project session so the planning convention never needs re-explaining.",
-    "version": "1.0.0"
-}

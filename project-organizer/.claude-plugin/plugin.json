@@ -1,5 +1,0 @@
-{
-    "name": "project-organizer",
-    "description": "Initializes and maintains an Obsidian vault inside the project directory that serves as a living knowledge base of the project's structure, features, tools, and dependencies. Works best alongside the obsidian plugin from https://github.com/kepano/obsidian-skills (recommended, not required).",
-    "version": "1.0.0"
-}

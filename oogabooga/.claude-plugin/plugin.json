@@ -1,5 +1,0 @@
-{
-    "name": "oogabooga",
-    "description": "Makes Claude talk like a caveman — short sentences, primitive speech, max 3 sentences for status updates. Activate with 'caveman mode', 'oogabooga', or any request to talk primitive.",
-    "version": "1.0.0"
-}

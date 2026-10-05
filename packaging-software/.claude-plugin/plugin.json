@@ -1,5 +1,0 @@
-{
-  "name": "packaging-software",
-  "description": "Invoke BEFORE writing any PyInstaller .spec file or packaging a Python app into a Windows .exe. Encodes onedir build, .spec-driven config, icon/logo, exe naming + embedded version metadata, and frozen-app asset bundling.",
-  "version": "1.0.0"
-}

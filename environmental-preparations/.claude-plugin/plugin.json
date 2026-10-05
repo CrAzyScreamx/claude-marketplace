@@ -1,5 +1,0 @@
-{
-    "name": "environmental-preparations",
-    "description": "A running log of the user's environment preferences and configuration changes (CLAUDE.md rules, settings, conventions). Read at session start to set up the environment the way the user likes; append a dated entry whenever an environment change is made.",
-    "version": "1.0.0"
-}

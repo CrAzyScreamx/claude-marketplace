@@ -1,67 +1,37 @@
 {
-  "name": "my-guidelines",
+  "name": "amits-marketplace",
   "owner": {
     "name": "Amit Yanay"
   },
   "plugins": [
     {
       "name": "worktree-guidelines",
-      "source": "./worktree-guidelines",
+      "source": "./plugins/worktree-guidelines",
       "description": "Guidelines-first worktree workflow: entry steers you to load a per-language guidelines skill (or ask to build one via best-practices) and code via the coder agent, which uses Context7 for up-to-date library docs."
     },
     {
-      "name": "session-manager",
-      "source": "./session-manager",
-      "description": "Adds commands to manage a session in the project, /start-session to start a session and /summarize-session to summarize the session and update the summary.md file."
-    },
-    {
       "name": "image-generator",
-      "source": "./image-generator",
+      "source": "./plugins/image-generator",
       "description": "Generates images via OpenRouter using Vertex AI models. Triggers on /generate-image or automatically when an image is needed."
     },
     {
-      "name": "project-organizer",
-      "source": "./project-organizer",
-      "description": "Initializes and maintains an Obsidian vault inside the project directory that serves as a living knowledge base of the project's structure, features, tools, and dependencies."
-    },
-    {
-      "name": "oogabooga",
-      "source": "./oogabooga",
-      "description": "A fun plugin that adds a command /oogabooga to make the AI start talking like a caveman. Useful to reduce Token usage"
-    },
-    {
-      "name": "project-planning",
-      "source": "./project-planning",
-      "description": "Reads a project's plan.md and builds/updates a tasks.md split into Milestones and sub-tasks with descriptions and a status tracking table. Auto-triggers at project/session start so the planning convention never needs re-explaining."
-    },
-    {
-      "name": "environmental-preparations",
-      "source": "./environmental-preparations",
-      "description": "A running log of the user's environment preferences and configuration changes (CLAUDE.md rules, settings, conventions). Read at session start to set up the environment the way the user likes."
-    },
-    {
       "name": "coding-guidelines",
-      "source": "./coding-guidelines",
+      "source": "./plugins/coding-guidelines",
       "description": "Coding guidelines bundle — invoke the matching -guidelines skill BEFORE writing code for that stack (frontend, backend, containerization, ci-cd). Encodes per-stack conventions, architecture rules, and tooling commands."
     },
     {
-      "name": "packaging-software",
-      "source": "./packaging-software",
-      "description": "Invoke BEFORE writing any PyInstaller .spec file or packaging a Python app into a Windows .exe. Encodes onedir build, .spec-driven config, icon/logo, exe naming + embedded version metadata, and frozen-app asset bundling."
-    },
-    {
       "name": "rtl-fix",
-      "source": "./rtl-fix",
+      "source": "./mods/rtl-fix",
       "description": "Mod: displays Hebrew/Arabic (RTL) text correctly in your messages and Claude's replies, wrapping lines before reordering them."
     },
     {
       "name": "usage-alert",
-      "source": "./usage-alert",
+      "source": "./mods/usage-alert",
       "description": "Mod: shows 5-hour and weekly usage in the status line and alerts when either reaches 90%."
     },
     {
       "name": "idle-handoff",
-      "source": "./idle-handoff",
+      "source": "./mods/idle-handoff",
       "description": "Mod: warns before an idle session's prompt cache expires, saves a handoff summary (on idle, /exit or /clear), and offers it to the next session in the project."
     }
   ]
