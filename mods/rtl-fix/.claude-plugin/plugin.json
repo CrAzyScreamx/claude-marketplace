@@ -1,14 +1,19 @@
 {
   "name": "rtl-fix",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Displays Hebrew/Arabic (RTL) text correctly in your messages and Claude's replies",
   "userConfig": {
     "mode": {
       "type": "string",
       "title": "RTL mode",
-      "description": "visual: reorder RTL text for terminals without bidi support (most). marks: add Unicode direction marks for terminals that do their own bidi.",
-      "default": "visual",
-      "options": ["visual", "marks"]
+      "description": "auto: pick by terminal (terminal for macOS Terminal, visual for others). visual: reorder RTL text for terminals that draw left to right (iTerm2 with its own RTL support off). terminal: pre-compensate for terminals that run their own bidi with a left-to-right base (macOS Terminal). marks: add Unicode direction marks.",
+      "default": "auto",
+      "options": [
+        "auto",
+        "visual",
+        "terminal",
+        "marks"
+      ]
     }
   }
 }
