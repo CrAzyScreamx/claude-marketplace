@@ -9,7 +9,7 @@ Follow these before writing any Python code. Load the matching reference below *
 
 ## Conditional references — read the file when the case applies
 - **Using a database?** → read `references/db.md` (SQLAlchemy 2.0 + Alembic).
-- **Building/exposing an API?** → read `references/api.md` (FastAPI).
+- **Building/exposing an API?** → read `references/api.md` (FastAPI, rotating file logs).
 - **Adding caching?** → read `references/caching.md` (Redis / redis-py).
 - **Building a CustomTkinter desktop GUI?** → read `references/customtkinter.md` (CTk structure, threading, CTkImage, theming).
 
